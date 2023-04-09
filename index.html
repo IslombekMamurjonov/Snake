@@ -4,32 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snacke</title>
-    <style>
-        #p1 {
-            color: #000;
-            text-align: center;
-            font-size: 30px;
-            font-family: 'system-ui', sans-serif;
-        }
-        #p1 a {
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .game {
-            display: flex;
-            justify-content: center;
-        }
-        #canvas {
-            border: 1px solid #fff;
-            background-color: #324a5f;
-        }
-    </style>
+    <title>Snake</title>
+    <link href="img/snake.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <p id="p1">Score: <span id="score"></span></p>
     <div class="game">
         <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+    <div class="buttons">
+        <button id="upBtn">🔼</button>
+        <div>
+            <button id="leftBtn">◀️</button>
+            <button id="rightBtn">▶️</button>   
+        </div>
+        <button id="downBtn">🔽</button>
     </div>
 
     <p id="p1">© 2022 <a href="https://github.com/IslombekMamurjonov">myGithhub</a></p>

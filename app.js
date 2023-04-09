@@ -100,6 +100,41 @@ function loop() {
     })
 }
 
+// Telefon boshqarish tugmalari
+const upBtn = document.getElementById('upBtn');
+const downBtn = document.getElementById('downBtn');
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
+
+upBtn.addEventListener('click', function() {
+    if(snake.dy === 0){ // tepa
+        snake.dy = -grid;
+        snake.dx = 0
+    }
+});
+
+downBtn.addEventListener('click', function() {
+    if(snake.dy === 0){ // past
+        snake.dy = grid;
+        snake.dx = 0
+    }
+});
+
+leftBtn.addEventListener('click', function() {
+    if(snake.dx === 0){ // chap
+        snake.dx = -grid;
+        snake.dy = 0
+    }
+});
+
+rightBtn.addEventListener('click', function() {
+    if(snake.dx === 0){ // o'ng
+        snake.dx = grid;
+        snake.dy = 0
+    }
+});
+
+
 document.addEventListener('keydown', function(e) {
     if(e.keyCode === 37 && snake.dx === 0){ // chap
         snake.dx = -grid;
